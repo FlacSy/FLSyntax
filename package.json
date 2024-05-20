@@ -1,0 +1,30 @@
+{
+    "name": "fl-syntax-highlighter",
+    "displayName": "FL Syntax Highlighter",
+    "description": "Syntax highlighting for .fl and .fls files",
+    "version": "0.0.2",
+    "publisher": "FLSyntax",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "fl",
+                "aliases": ["FL", "fl"],
+                "extensions": [".fl", ".fls"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fl",
+                "scopeName": "source.fl",
+                "path": "./syntaxes/fl.tmLanguage.json"
+            }
+        ]
+    }
+}
