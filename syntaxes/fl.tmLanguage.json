@@ -38,7 +38,11 @@
             "name": "string.quoted.double.fl"
         },
         {
-            "match": "\\b(key|value)\\b",
+            "match": "\\b(key)\\b",
+            "name": "support.type.fl"
+        },
+        {
+            "match": "\\b(value)\\b",
             "name": "support.type.fl"
         }
     ],

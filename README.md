@@ -19,6 +19,6 @@ Open any `.fl` or `.fls` file to see the syntax highlighting in action.
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.3
 
 - Initial release of FL Syntax Highlighter.
