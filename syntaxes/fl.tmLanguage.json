@@ -14,7 +14,7 @@
             "name": "keyword.other.const.fl"
         },
         {
-            "match": "\\b(float|str|int|bool|list)\\b",
+            "match": "\\b(float|str|int|bool|list|dict)\\b",
             "name": "storage.type.fl"
         },
         {
@@ -36,6 +36,10 @@
         {
             "match": "\".*?\"",
             "name": "string.quoted.double.fl"
+        },
+        {
+            "match": "\\b(key|value)\\b",
+            "name": "support.type.fl"
         }
     ],
     "repository": {},
