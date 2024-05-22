@@ -1,52 +1,46 @@
 {
-    "scopeName": "source.fl",
-    "patterns": [
-        {
-            "match": "#.*$",
-            "name": "comment.line.number-sign.fl"
-        },
-        {
-            "match": "//.*$",
-            "name": "comment.line.double-slash.fl"
-        },
-        {
-            "match": "\\b(const)\\b",
-            "name": "keyword.other.const.fl"
-        },
-        {
-            "match": "\\b(float|str|int|bool|list|dict)\\b",
-            "name": "storage.type.fl"
-        },
-        {
-            "match": "\\b(True|False)\\b",
-            "name": "constant.language.boolean.fl"
-        },
-        {
-            "match": "\\b(PI)\\b",
-            "name": "constant.language.float.fl"
-        },
-        {
-            "match": "\\b\\d+\\b",
-            "name": "constant.numeric.integer.fl"
-        },
-        {
-            "match": "\\b\\d+\\.\\d+\\b",
-            "name": "constant.numeric.float.fl"
-        },
-        {
-            "match": "\".*?\"",
-            "name": "string.quoted.double.fl"
-        },
-        {
-            "match": "\\b(key)\\b",
-            "name": "support.type.fl"
-        },
-        {
-            "match": "\\b(value)\\b",
-            "name": "support.type.fl"
-        }
-    ],
-    "repository": {},
-    "names": "FL",
-    "fileTypes": ["fl", "fls"]
+	"name": "FL Syntax Highlighting",
+	"scopeName": "source.fl",
+	"fileTypes": [
+		"fl"
+	],
+	"patterns": [
+		{
+			"match": "#.*$",
+			"name": "comment.line.number-sign.fl"
+		},
+		{
+			"begin": "/\\*",
+			"end": "\\*/",
+			"name": "comment.block.fl"
+		},
+		{
+			"match": "\\b(import)\\b",
+			"name": "keyword.control.import.fl"
+		},
+		{
+			"match": "\\b(int|str|float|bool|dict|list)\\b|\\$",
+			"name": "storage.type.fl"
+		},
+		{
+			"match": "\\b(key)\\b",
+			"name": "storage.modifier.fl"
+		},
+		{
+			"match": "\\b(const|True|False|if|else|while|for|return)\\b",
+			"name": "keyword.control.fl"
+		},
+		{
+			"match": "[0-9]+",
+			"name": "constant.numeric.fl"
+		},
+		{
+			"match": "\\+|\\-|\\*|\\/|\\%|\\>|\\<|\\=",
+			"name": "keyword.operator.arithmetic.fl"
+		},
+		{
+			"match": "[\\[\\]{}():,]",
+			"name": "punctuation.definition.fl"
+		}
+	]
 }
